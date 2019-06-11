@@ -4,6 +4,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +16,7 @@ import br.com.tab.depositodeseries.operations.UserSignUpRequest;
 import br.com.tab.depositodeseries.operations.UserSignUpResponse;
 import br.com.tab.depositodeseries.service.UserService;
 
+@CrossOrigin
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource
